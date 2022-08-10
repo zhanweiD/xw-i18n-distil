@@ -1,0 +1,11 @@
+example
+test
+node_modules
+logs
+package-lock.json
+.gitignore
+.eslintignore
+.eslintrc
+.vscode
+.DS_Store
+.idea

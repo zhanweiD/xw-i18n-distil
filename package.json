@@ -1,0 +1,46 @@
+{
+  "name": "@dtwave/oner-tools-distil",
+  "version": "1.1.1",
+  "description": "项目国际化中文提取及源代码改造工具",
+  "main": "./bin/distil",
+  "scripts": {
+    "start": "node bin/distil -e example/js/test.js -o example/lang -l zh-CN,en-US",
+    "bugger": "node --inspect-brk bin/distil -e example/js/test.js -o example/lang -l zh-CN,en-US",
+    "test": "jest --color"
+  },
+  "keywords": [
+    "oner-tools-distil"
+  ],
+  "bin": {
+    "distil": "./bin/distil"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@gitlab.dtwave-inc.com:30001/oner/oner-tools-distil.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.dtwave-inc.com:30001/oner/oner-tools-distil/issues"
+  },
+  "author": {
+    "name": "jiangfeng.jf"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/generator": "^7.6.2",
+    "@babel/parser": "^7.6.2",
+    "@babel/traverse": "^7.6.2",
+    "@babel/types": "^7.6.1",
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "convert-excel-to-json": "^1.6.1",
+    "glob": "^7.1.3",
+    "mkdirp": "^0.5.1",
+    "prettier": "^1.18.2",
+    "xlsx": "^0.14.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "jest": "^23.6.0"
+  }
+}
